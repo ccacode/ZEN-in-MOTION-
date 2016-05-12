@@ -1,0 +1,24 @@
+void setup() {
+pinMode(5,OUTPUT);
+
+  Serial.begin(9600);  //boudrate
+}
+
+void loop() {
+
+  int rate = analogRead (A0);
+  Serial.println(rate);
+  
+  if (rate >   200){  // value between 0-1023
+    analogWrite (5, 170);  // value between 0-255
+    }
+    
+ if (rate > 400  ){   // value between 0-1023
+  analogWrite (5, 220);  // value between 0-255
+  } 
+  
+ if (rate > 550){   // value between 0-1023
+  analogWrite (5, 255);  // value between 0-255
+  }
+  
+}
