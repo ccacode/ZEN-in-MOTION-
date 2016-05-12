@@ -1,0 +1,67 @@
+Project Describtion:
+
+Zen in Motion is a zen garden designed to help visualize breathe during breathing exercise. 
+Giving visual feedback that corispondes to your breathe can signifiganilty improve breathing practices.
+Zen in motion uses a traditional Zen garden to natual give feed back in a wave motion, the timeless motion
+corisponds to your heartrate leading to a move focused and aware excireses.
+
+Hows the concept evolved throught the process:
+
+Keeeping the core value of zen and visual feedback in place the project diviated towards feedback/motion driven from a preasure sensor.
+The sensor became the base for the stacking of rocks which are found in the garden.
+
+Tech Speces & Hardware:
+
+Challenges- Creating a good looking zen garden that moves while looking an feeling natural. 
+          - motion/speed of motor  (stepper motor= not smooth enough)(dc motor too fast) Solution= geared motor)
+          - moving base for sand- needs to be flexible 
+          - Even wave motion - from inside out, equal angle of rotation //each 60 degrees apart
+          - solid stucture to hold sand and cam shaft in place
+          - making shit fit right..
+
+Components:
+  Box- Mdf  //big mistake
+  Base- Mdf  //big mistake
+  wooden shaft
+  T-shirt
+  bearing- to reduce friction 
+  barring mount- 3D printed
+  motor mount-3D printed
+  shaft to motor adapter-3D printed
+  3x cam circles
+  3x upper rings 
+  Geared motor
+  Pressure sensor
+  Uno arduino 
+  Bread board
+  Sand
+  
+Process:
+
+Sketch overall design-  box that was as shallow as possible while housing components
+Solid works model-      set overall dinensions- create components to hold motor and camshaft
+Build box-              Mdf 
+Print components-
+Fasten 3d printed components-  installing bearing ,motor and motor to inside box
+Adjustments-  cam shaft and circles for even motion
+Create sand surface- made frame for tshirt to be streched over
+Wire arduino and board- made 2 circuits   sensor's and motors
+Code- Create 3 shresh holds for Stacking of rocks- corisponding to speed. >weight= >speed
+Fine tunning- the motor was drawing too much current for the arduino to correctly funtion
+              so  a capacitor was put in that curcit to even out the fluxuation of current.
+              Due to the sands weight the thresholds all had to be increaesed do the motor would still work.
+              this called for smaller diffences between threshold ( close to 20- 30 instead of 50-100)
+              the threshold for the pressure sensor were increased to after picking the exact rocks and the 
+              sequence of stacking them.
+Act alife for presentation- wash face with cold water
+
+
+              
+
+
+
+
+
+
+
+
